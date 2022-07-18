@@ -32,7 +32,7 @@ exports.signup = async (req, res) => {
             });
 
             const mailOptions = {
-                from: 'isaacchimdi@gmail.com',
+                from: process.env.EMAIL,
                 to: email,
                 subject: 'Welcome to nodemailer',
                 text:
